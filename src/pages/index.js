@@ -1,21 +1,31 @@
 import React from "react"
-import { Link } from "gatsby"
+import "../styles/global.css"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from "~components/layout"
+import SEO from "~components/seo"
+import CardOne from "~components/cards/card-one"
+import CardTwo from "~components/cards/card-two"
+import CardThree from "~components/cards/card-three"
+import CardFour from "../components/cards/card-four"
+
+import Clients from "~components/clients"
+import BannerOne from "../components/banners/banner-one"
+import BannerTwo from "../components/banners/banner-two"
+import BannerThree from "../components/banners/banner-three"
+import Form from "../components/form"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <CardOne />
+    <Clients />
+    <BannerOne />
+    <CardTwo />
+    <CardThree />
+    <CardFour />
+    <BannerTwo />
+    <BannerThree />
+    <Form />
   </Layout>
 )
 
