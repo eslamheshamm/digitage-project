@@ -1,42 +1,42 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
-
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
+const NavLink = ({ to, children }) => (
+  <li className="text-gray">
+    <Link to={to} activeClassName="font-semibold">
+      {children}
+    </Link>
+  </li>
+)
+const Header = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      placeholderImage: file(relativePath: { eq: "logo.png" }) {
+        childImageSharp {
+          fixed(width: 120, height: 120) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `)
+  return (
+    <header className="flex justify-between items-center  md:w-10/12 md:mx-auto mt-6 mb-16">
+      <h1 className=" font-bold text-4xl">
+        <Link to="/">
+          <Img fixed={data.placeholderImage.childImageSharp.fixed} />
         </Link>
       </h1>
-    </div>
-  </header>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+      <nav className="w-6/12">
+        <ul className="flex justify-around flex-wrap">
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="our-services">Our Services</NavLink>
+          <NavLink to="our-portfolio">Our Portfolio</NavLink>
+          <NavLink to="contact-us">Contact Us</NavLink>
+        </ul>
+      </nav>
+    </header>
+  )
 }
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
 export default Header
