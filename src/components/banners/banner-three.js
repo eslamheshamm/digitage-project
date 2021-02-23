@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 const BannerThree = () => {
   const button = {
     background:
-      "linear-gradient(90deg, rgba(249, 255, 177, 0.4) 3.11%, rgba(212, 90, 255, 0) 114.83%)",
+      "linear-gradient(90deg, rgba(249, 255, 177, 0.5) 3.11%, rgba(212, 90, 255, 0.4) 114.83%)",
     boxShadow: "0px 4px 70px 0px #F7E7F9 30%",
     border: "1px solid #FFD349 10%",
   }
@@ -12,8 +12,8 @@ const BannerThree = () => {
     query {
       image1: file(relativePath: { eq: "child.png" }) {
         childImageSharp {
-          fixed {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -34,14 +34,20 @@ const BannerThree = () => {
     }
   `)
   return (
-    <section className="flex flex-col items-center w-full my-16 f">
-      <div className="grid grid-cols-3 gap-6 w-full">
-        <Img fluid={data.image1.childImageSharp.fixed} />
-        <Img fluid={data.image2.childImageSharp.fluid} className="w-full" />
-        <Img fluid={data.image3.childImageSharp.fluid} className="w-full" />
+    <section className="flex flex-col items-center w-full my-16 ">
+      <div className="w-full grid grid-cols-1 sm:grid-cols-3">
+        <figure className="w-full">
+          <Img fluid={data.image1.childImageSharp.fluid} />
+        </figure>
+        <figure className="w-full">
+          <Img fluid={data.image2.childImageSharp.fluid} />
+        </figure>
+        <figure className="w-full">
+          <Img fluid={data.image3.childImageSharp.fluid} />
+        </figure>
       </div>
       <button
-        className="py-6 px-10 uppercase tracking-widest font-semibold rounded-xl"
+        className="py-6 px-4 text-sm md:text-base md:py-6 md:px-10 uppercase tracking-wider md:tracking-widest  font-semibold rounded-xl mt-12"
         style={button}
       >
         OUR company profile
