@@ -24,7 +24,7 @@ const FormInputs = () => {
         type="text"
         placeholder="Your name / company’s name"
         className="p-8 border rounded-2xl mb-5 focus:ring-1 focus:ring-primary focus:outline-none"
-        ref={register}
+        ref={register({ required: true })}
       />
 
       {/* include validation with required or other standard HTML validation rules */}

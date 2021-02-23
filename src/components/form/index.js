@@ -5,9 +5,9 @@ import Email from "./assets/email.svg"
 import Gps from "./assets/gps.svg"
 const Form = () => {
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-60 mb-20">
+    <section className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-32 md:mt-60 mb-20">
       <div>
-        <h1 className="text-4xl font-header font-bold ">
+        <h1 className="text-2xl md:text-4xl font-header font-bold ">
           Let us handle your <br /> project, professionally.
         </h1>
         <p className="mt-8 mb-10 leading-7">
