@@ -10,7 +10,6 @@ import PropTypes from "prop-types"
 import useSiteMetadata from "../hooks/use-sitemetadata"
 import Header from "./header"
 import Footer from "./footer"
-import "~styles/layout.css"
 
 const Layout = ({ children }) => {
   const { title } = useSiteMetadata()
