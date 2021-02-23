@@ -15,9 +15,11 @@ const Footer = () => {
     }
   `)
   return (
-    <footer className="flex justify-between items-center py-6">
+    <footer className="flex flex-col sm:flex-row justify-between items-center py-6 w-11/12 mx-auto">
       {/* <Logo /> */}
-      <Img fixed={data.placeholderImage.childImageSharp.fixed} />
+      <div className="hidden md:block">
+        <Img fixed={data.placeholderImage.childImageSharp.fixed} />
+      </div>
       <p>copyright digitage 2021</p>
       <p>copyright Orange labs 2020</p>
     </footer>
