@@ -25,19 +25,19 @@ const CardThree = () => {
       style={card}
     >
       <div className="w-full flex justify-center items-center">
-        <figure className="w-6/12">
+        <figure className="w-9/12 mt-16 md:w-8/12">
           <Img
             fluid={data.placeholderImage.childImageSharp.fluid}
             className="w-full"
           />
         </figure>
       </div>
-      <article className="p-14">
+      <article className=" px-8 my-8 md:px-14 md:my-14">
         <h3 className="flex items-center font-semibold uppercase mb-12 text-gray-800">
           Marketing
         </h3>
         <div>
-          <h1 className="font-header font-bold text-5xl leading-snug  mb-6 text-gray-800">
+          <h1 className="font-rock font-bold text-2xl md:text-4xl lg:text-5xl leading-snug  mb-6 text-gray-800">
             Digital marketing
           </h1>
           <p className="font-title leading-normal font-light mb-8 ">
@@ -48,7 +48,7 @@ const CardThree = () => {
           </p>
         </div>
         <div>
-          <h1 className="font-header font-bold text-5xl leading-snug  mb-6 text-gray-800">
+          <h1 className="font-rock font-bold text-2xl md:text-4xl lg:text-5xl leading-snug  mb-6 text-gray-800">
             Branding
           </h1>
           <p className="font-title leading-normal font-light mb-8 ">

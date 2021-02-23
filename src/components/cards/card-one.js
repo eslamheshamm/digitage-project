@@ -7,8 +7,8 @@ const CardOne = () => {
     query {
       placeholderImage: file(relativePath: { eq: "hero.png" }) {
         childImageSharp {
-          fixed(width: 600, height: 600) {
-            ...GatsbyImageSharpFixed
+          fluid {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -21,15 +21,15 @@ const CardOne = () => {
   }
   return (
     <section
-      className="grid grid-cols-1 md:grid-cols-2 justify-items-start shadow-md rounded-3xl"
+      className="grid grid-cols-1 md:grid-cols-2 place-items-center shadow-md rounded-3xl"
       style={card}
     >
-      <article className="p-14">
+      <article className="px-8 my-10 md:p-16">
         <h3 className="flex items-center font-semibold">
           <div className=" border-b-2 w-4 h-1 border-black mr-2"></div>
           Creative Agency
         </h3>
-        <h1 className="font-header font-bold text-6xl leading-snug  my-4 text-gray-dark">
+        <h1 className="font-rock font-bold  text-3xl md:text-4xl lg:text-6xl leading-snug  my-4 text-gray-dark">
           The dream is not that you see while you are asleep..
         </h1>
         <p className="font-title leading-normal font-light mb-8 ">
@@ -40,9 +40,9 @@ const CardOne = () => {
         <Button>Let's Connect</Button>
       </article>
 
-      <div className="w-full flex justify-center items-start">
-        <figure>
-          <Img fixed={data.placeholderImage.childImageSharp.fixed} />
+      <div className="w-full flex justify-center items-center row-start-1 row-end-2 md:col-start-2 my-8 md:my-0">
+        <figure className="w-full md:w-10/12 ">
+          <Img fluid={data.placeholderImage.childImageSharp.fluid} />
         </figure>
       </div>
     </section>

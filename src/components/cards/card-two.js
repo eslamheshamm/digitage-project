@@ -24,15 +24,15 @@ const CardTwo = () => {
       className="grid grid-cols-1 md:grid-cols-2 first-card justify-items-start rounded-xl my-16"
       style={card}
     >
-      <article className="p-14">
+      <article className=" px-8 my-8 md:px-14 md:my-14">
         <h3 className="flex items-center font-semibold uppercase mb-12 text-gray-800">
           Marketing
         </h3>
         <div>
-          <h1 className="font-header font-bold text-5xl leading-snug  mb-6 text-gray-800">
+          <h1 className="font-rock font-bold text-3xl md:text-4xl lg:text-5xl leading-snug  mb-6 text-gray-800">
             Digital marketing
           </h1>
-          <p className="font-title leading-normal font-light mb-8 ">
+          <p className="font-title leading-normal font-light mb-8 break-normal">
             We achieve your business goals using digital marketing solutions, we
             have a long experience that enables us to open other doors for your
             earnings. We build a strategy that fits your business goal, by
@@ -40,7 +40,7 @@ const CardTwo = () => {
           </p>
         </div>
         <div>
-          <h1 className="font-header font-bold text-5xl leading-snug  mb-6 text-gray-800">
+          <h1 className="font-rock font-bold text-2xl md:text-4xl lg:text-5xl leading-snug  mb-6 text-gray-800">
             Branding
           </h1>
           <p className="font-title leading-normal font-light mb-8 ">
@@ -51,8 +51,8 @@ const CardTwo = () => {
           </p>
         </div>
       </article>
-      <div className="w-full flex justify-center items-center">
-        <figure className="w-6/12">
+      <div className="w-full flex justify-center items-center row-start-1 row-end-2 md:col-start-2 mt-8 md:mt-0">
+        <figure className="w-10/12 md:w-12/12">
           <Img
             fluid={data.placeholderImage.childImageSharp.fluid}
             className="w-full"
