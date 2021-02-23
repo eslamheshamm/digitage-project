@@ -1,24 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Kameron:wght@400;700&family=Montserrat:wght@300;700&family=Poppins:wght@300;400;600;700&display=swap");
+@import "./typography.css";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.underline-yellow {
-  @apply underline;
-  text-decoration-thickness: 3px;
-  text-decoration-color: #ffd349;
-  text-underline-offset: -3px;
-  text-decoration-skip-ink: none;
-}
-.first-card {
-  @apply bg-gradient-to-r;
-  background: rgb(237, 237, 237);
-  background: linear-gradient(
-    90deg,
-    rgba(237, 237, 237, 0.11808473389355745) 5%,
-    rgba(248, 211, 98, 0) 100%
-  );
-
-  box-shadow: "0px 8px 70px 0px rgba(255,211,73,0.09)";
-}

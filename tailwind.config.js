@@ -14,7 +14,8 @@ module.exports = {
       },
     },
     fontFamily: {
-      header: ["Kameron", "serif"],
+      rock: ["Rockwell", "serif"],
+      rockbold: ["RockwellBold", "serif"],
       body: ["Poppins", "sans-serif"],
       title: ["Montserrat", "sans-serif"],
     },
