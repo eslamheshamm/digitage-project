@@ -2,13 +2,14 @@ import { Link } from "gatsby"
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-const NavLink = ({ to, children }) => (
-  <li className="text-gray flex-auto p-2">
-    <Link to={to} activeClassName="font-semibold ">
-      {children}
-    </Link>
-  </li>
-)
+
+// const NavLink = ({ to, children }) => (
+//   <li className="text-gray flex-auto p-2">
+//     <Link to={to} activeClassName="font-semibold ">
+//       {children}
+//     </Link>
+//   </li>
+// )
 const Header = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -22,9 +23,9 @@ const Header = () => {
     }
   `)
   return (
-    <header className="flex justify-between items-start  w-11/12 mx-auto my-6  md:mb-16">
-      <h1 className=" font-bold text-4xl">
-        <Link to="/">
+    <header className="flex justify-between items-center lg:items-start  w-11/12 mx-auto my-6  md:mb-16">
+      <h1>
+        <Link to="/" className="cursor-default">
           <Img fixed={data.placeholderImage.childImageSharp.fixed} />
         </Link>
       </h1>
