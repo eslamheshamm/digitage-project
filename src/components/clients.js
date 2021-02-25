@@ -42,11 +42,20 @@ const Clients = () => {
       <div className="flex justify-around items-center h-full w-9/12">
         <Img
           fluid={data.logo1.childImageSharp.fluid}
-          className="w-32 object-cover"
+          className="w-32 imageBlack"
         />
-        <Img fluid={data.logo2.childImageSharp.fluid} className="w-24" />
-        <Img fluid={data.logo3.childImageSharp.fluid} className="w-24" />
-        <Img fluid={data.logo4.childImageSharp.fluid} className="w-24" />
+        <Img
+          fluid={data.logo2.childImageSharp.fluid}
+          className="w-24 imageBlack"
+        />
+        <Img
+          fluid={data.logo3.childImageSharp.fluid}
+          className="w-24 imageBlack"
+        />
+        <Img
+          fluid={data.logo4.childImageSharp.fluid}
+          className="w-24 imageBlack"
+        />
       </div>
     </section>
   )
