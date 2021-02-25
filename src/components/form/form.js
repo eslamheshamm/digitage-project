@@ -11,8 +11,11 @@ const FormInputs = () => {
       className="flex flex-col justify-between font-body py-2"
       autoComplete="off"
       id="form"
+      name="contact"
+      method="POST"
+      data-netlify="true"
     >
-      <div className="mb-5">
+      <label className="mb-5">
         <input
           name="email"
           type="email"
@@ -21,8 +24,8 @@ const FormInputs = () => {
           className="p-8 border rounded-2xl focus:ring-1 focus:ring-primary focus:outline-none block w-full"
         />
         {errors.email && <span>This field is required</span>}
-      </div>
-      <div className="mb-5 w-full">
+      </label>
+      <label className="mb-5 w-full">
         <input
           name="name"
           type="text"
@@ -31,8 +34,8 @@ const FormInputs = () => {
           ref={register({ required: true })}
         />
         {errors.name && <span>This field is required</span>}
-      </div>
-      <div className="w-full mb-8">
+      </label>
+      <label className="w-full mb-8">
         <textarea
           placeholder="Your message"
           name="message"
@@ -50,7 +53,7 @@ const FormInputs = () => {
         )}
 
         {/* {errors.message && <span>This field is required</span>} */}
-      </div>
+      </label>
       <button
         type="submit"
         className="self-end py-5 px-20 rounded-2xl bg-primary font-semibold text-lg"
