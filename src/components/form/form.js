@@ -1,9 +1,32 @@
 import React from "react"
 import { useForm } from "react-hook-form"
 
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&")
+}
+
 const FormInputs = () => {
   const { register, handleSubmit, errors } = useForm()
-  const onSubmit = data => console.log(data)
+  const [succes, setSucces] = React.useState(false)
+  const onSubmit = (data, e) => {
+    e.preventDefault()
+    const form = e.target
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({
+        "form-name": form.getAttribute("name"),
+        ...data,
+      }),
+    })
+      .then(res => {
+        console.log(res)
+        setSucces(true)
+      })
+      .catch(error => alert(error))
+  }
 
   return (
     <form
@@ -14,6 +37,7 @@ const FormInputs = () => {
       name="contact"
       method="POST"
       data-netlify="true"
+      action="/thanks/"
       data-netlify-honeypot="bot-field"
     >
       <input type="hidden" name="form-name" value="contact" />
@@ -61,6 +85,8 @@ const FormInputs = () => {
 
         {/* {errors.message && <span>This field is required</span>} */}
       </label>
+      {succes && <span>Thanks!</span>}
+
       <button
         type="submit"
         className="self-end py-5 px-20 rounded-2xl bg-primary font-semibold text-lg"
