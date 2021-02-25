@@ -1,7 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { animateScroll as scroll } from "react-scroll"
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -18,14 +17,9 @@ const Footer = () => {
   return (
     <footer className="flex flex-col sm:flex-row justify-between items-center py-6 w-11/12 mx-auto">
       {/* <Logo /> */}
-      <div className="hidden md:block">
-        <Img
-          fixed={data.placeholderImage.childImageSharp.fixed}
-          onClick={() => {
-            scroll.scrollToTop()
-          }}
-        />
-      </div>
+      <h1 className="hidden md:block">
+        <Img fixed={data.placeholderImage.childImageSharp.fixed} />
+      </h1>
       <p>copyright digitage 2021</p>
       <p>copyright Orange labs 2020</p>
     </footer>
