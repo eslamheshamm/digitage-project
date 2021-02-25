@@ -2,7 +2,7 @@ import React from "react"
 import Button from "../button"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-const CardOne = () => {
+const CardOne = ({ handleClick }) => {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "hero.png" }) {
@@ -37,7 +37,7 @@ const CardOne = () => {
           creative agencies and global brands alike – putting passion, pride and
           plenty of elbow grease into everything we do.
         </p>
-        <Button>Let's Connect</Button>
+        <Button handleClick={handleClick}>Let's Connect</Button>
       </article>
 
       <div className="w-full flex justify-center items-center row-start-1 row-end-2 md:col-start-2 my-8 md:my-0">

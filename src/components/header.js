@@ -23,7 +23,7 @@ const Header = () => {
     }
   `)
   return (
-    <header className="flex justify-between items-center lg:items-start  w-11/12 mx-auto my-6  md:mb-16">
+    <header className="flex justify-center lg:justify-start items-center lg:items-start w-11/12 lg:w-10/12 xl:w-9/12 mx-auto my-6  md:mb-16">
       <h1>
         <Link to="/" className="cursor-default">
           <Img fixed={data.placeholderImage.childImageSharp.fixed} />

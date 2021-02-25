@@ -37,13 +37,22 @@ const BannerThree = () => {
     <section className="flex flex-col items-center w-full my-16 ">
       <div className="w-full grid grid-cols-1 sm:grid-cols-3">
         <figure className="w-full">
-          <Img fluid={data.image1.childImageSharp.fluid} />
+          <Img
+            fluid={data.image1.childImageSharp.fluid}
+            className="imageBlack"
+          />
+        </figure>
+        <figure className="w-full ">
+          <Img
+            fluid={data.image2.childImageSharp.fluid}
+            className="imageBlack"
+          />
         </figure>
         <figure className="w-full">
-          <Img fluid={data.image2.childImageSharp.fluid} />
-        </figure>
-        <figure className="w-full">
-          <Img fluid={data.image3.childImageSharp.fluid} />
+          <Img
+            fluid={data.image3.childImageSharp.fluid}
+            className="imageBlack"
+          />
         </figure>
       </div>
       <button

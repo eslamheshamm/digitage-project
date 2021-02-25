@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
   return (
     <body className="font-body ">
       <Header siteTitle={title || `Title`} />
-      <main className="w-11/12 md:w-9/12 mx-auto">{children}</main>
+      <main className="w-11/12 lg:w-10/12 xl:w-9/12 mx-auto">{children}</main>
       <Footer />
     </body>
   )
