@@ -14,7 +14,14 @@ const FormInputs = () => {
       name="contact"
       method="POST"
       data-netlify="true"
+      data-netlify-honeypot="bot-field"
     >
+      <input type="hidden" name="form-name" value="contact" />
+      <p class="hidden">
+        <label>
+          Don’t fill this out if you’re human: <input name="bot-field" />
+        </label>
+      </p>
       <label className="mb-5">
         <input
           name="email"
