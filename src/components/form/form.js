@@ -10,6 +10,7 @@ function encode(data) {
 const FormInputs = () => {
   const { register, handleSubmit, errors } = useForm()
   const [succes, setSucces] = React.useState(false)
+  const [disable, setDisable] = React.useState(false)
   const onSubmit = (data, e) => {
     e.preventDefault()
     const form = e.target
@@ -24,6 +25,7 @@ const FormInputs = () => {
       .then(res => {
         console.log(res)
         setSucces(true)
+        setDisable(true)
       })
       .catch(error => alert(error))
   }
@@ -85,11 +87,16 @@ const FormInputs = () => {
 
         {/* {errors.message && <span>This field is required</span>} */}
       </label>
-      {succes && <span>Thanks!</span>}
+      {succes && <span>Thank you!</span>}
 
       <button
         type="submit"
-        className="self-end py-5 px-20 rounded-2xl bg-primary font-semibold text-lg"
+        className={
+          disable
+            ? "self-end py-5 px-20 rounded-2xl bg-primary font-semibold text-lg opacity-40 cursor-auto"
+            : "self-end py-5 px-20 rounded-2xl bg-primary font-semibold text-lg"
+        }
+        disabled={disable}
       >
         Sent
       </button>
