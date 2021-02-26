@@ -1,33 +1,33 @@
 import React from "react"
-import Behance from "../assets/behance.svg"
-import Dribble from "../assets/dribble.svg"
+// import Behance from "../assets/behance.svg"
+// import Dribble from "../assets/dribble.svg"
 import Facebook from "../assets/facebook.svg"
 import Instagram from "../assets/instagram.svg"
 import Twitter from "../assets/twitter.svg"
 
 const SocialIcons = () => {
-  const Item = ({ children }) => (
+  const Item = ({ children, link }) => (
     <li className="mr-5">
-      <a href="/" target="_blank">
+      <a href={link} target="_blank" rel="noreferrer">
         {children}
       </a>
     </li>
   )
   return (
     <ul className="flex items-center">
-      <Item>
+      {/* <Item link="https://www.instagram.com/digitagestudio/">
         <Dribble />
-      </Item>
-      <Item>
+      </Item> */}
+      {/* <Item>
         <Behance />
-      </Item>
-      <Item>
+      </Item> */}
+      <Item link="https://twitter.com/digitagestudio">
         <Twitter />
       </Item>
-      <Item>
+      <Item link="https://www.instagram.com/digitagestudio/">
         <Instagram />
       </Item>
-      <Item>
+      <Item link="https://www.facebook.com/DigitageStudio/">
         <Facebook />
       </Item>
     </ul>
