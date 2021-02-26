@@ -24,7 +24,13 @@ const CardFour = () => {
       className="grid grid-cols-1 md:grid-cols-2 first-card justify-items-start rounded-xl my-16"
       style={card}
     >
-      <article className=" px-8 mt-16 mb-8 md:px-14 md:my-14">
+      <article
+        className=" px-8 mt-16 mb-8 md:px-14 md:my-14"
+        data-sal="slide-right"
+        data-sal-duration="1000" // changes duration of the animation (from 200 to 2000 ms)
+        data-sal-delay="100" // adds delay to the animation (from 5 to 1000 ms)
+        data-sal-easing="ease" // sets easing for the animation (see easings.net for reference)
+      >
         <h3 className="flex items-center font-semibold uppercase mb-12 text-gray-800">
           Marketing
         </h3>
@@ -51,7 +57,13 @@ const CardFour = () => {
           </p>
         </div>
       </article>
-      <div className="w-full flex justify-center items-center row-start-1 row-end-2 md:col-start-2 mt-8 md:mt-0">
+      <div
+        className="w-full flex justify-center items-center row-start-1 row-end-2 md:col-start-2 mt-8 md:mt-0"
+        data-sal="slide-left"
+        data-sal-duration="1000" // changes duration of the animation (from 200 to 2000 ms)
+        data-sal-delay="100" // adds delay to the animation (from 5 to 1000 ms)
+        data-sal-easing="ease" // sets easing for the animation (see easings.net for reference)
+      >
         <figure className="w-7/12 sm:w-4/12 md:w-5/12">
           <Img
             fluid={data.placeholderImage.childImageSharp.fluid}
