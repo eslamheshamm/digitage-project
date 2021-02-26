@@ -14,16 +14,9 @@ const CardOne = ({ handleClick }) => {
       }
     }
   `)
-  const card = {
-    background:
-      "linear-gradient(89.14deg, rgba(237, 237, 237, 0.11) 3.09%, rgba(209, 98, 248, 0.03) 106%)",
-    filter: "drop-shadow(0px 4px 70px rgba(109, 73, 255, 0.08))",
-  }
+
   return (
-    <section
-      className="grid grid-cols-1 md:grid-cols-2 place-items-center shadow-md rounded-3xl"
-      style={card}
-    >
+    <section className="grid grid-cols-1 md:grid-cols-2 place-items-center shadow-sm rounded-3xl bg-purple-600 bg-opacity-5">
       <article className="px-8 my-10 md:p-16">
         <h3 className="flex items-center font-semibold">
           <div className=" border-b-2 w-4 h-1 border-black mr-2"></div>
