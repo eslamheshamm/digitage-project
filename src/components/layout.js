@@ -13,8 +13,12 @@ import Footer from "./footer"
 
 const Layout = ({ children }) => {
   const { title } = useSiteMetadata()
+  const background = {
+    backgroundColor: "#292929",
+  }
+
   return (
-    <body className="font-body ">
+    <body className="font-body m-0 w-full" style={background}>
       <Header siteTitle={title || `Title`} />
       <main className="w-11/12 lg:w-10/12 xl:w-9/12 mx-auto">{children}</main>
       <Footer />

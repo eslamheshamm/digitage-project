@@ -1,9 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 import SocialIcons from "./social-media"
-
+import Logo from "../assets/logo.svg"
 // const NavLink = ({ to, children }) => (
 //   <li className="text-gray flex-auto p-2">
 //     <Link to={to} activeClassName="font-semibold ">
@@ -12,23 +10,12 @@ import SocialIcons from "./social-media"
 //   </li>
 // )
 const Header = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "logo.png" }) {
-        childImageSharp {
-          fixed(width: 120, height: 120) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-    }
-  `)
   return (
-    <header className="flex flex-col sm:flex-row justify-between items-center  w-11/12 lg:w-10/12 xl:w-9/12 mx-auto my-6  md:mb-16">
+    <header className="flex flex-col sm:flex-row justify-between items-center  w-11/12 lg:w-10/12 xl:w-9/12 mx-auto py-6  md:mb-16">
       <div>{/* empty just to trick flex and center my items */}</div>
       <h1 className="pr-5 ">
         <Link to="/" className="cursor-default">
-          <Img fixed={data.placeholderImage.childImageSharp.fixed} />
+          <Logo />
         </Link>
       </h1>
       <div>
