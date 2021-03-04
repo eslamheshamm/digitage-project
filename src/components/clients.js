@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+
 const Clients = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -35,7 +36,7 @@ const Clients = () => {
     }
   `)
   return (
-    <section className="flex justify-center items-center flex-col mt-36 mb-20">
+    <section className="flex justify-center items-center flex-col mt-36 mb-20 text-white">
       <h2 className="uppercase font-title font-bold text-xs mb-10">
         Some clients
       </h2>
