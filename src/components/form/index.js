@@ -8,21 +8,21 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 const Form = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "Contact.png" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     placeholderImage: file(relativePath: { eq: "Contact.png" }) {
+  //       childImageSharp {
+  //         fluid {
+  //           ...GatsbyImageSharpFluid
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
   return (
     <section className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-32 md:mt-60 mb-20 text-white  w-full">
-      <div className="relative z-10">
-        <div className="w-full absolute hidden lg:block -top-40 left-30 z-0 inBack">
+      <div>
+        {/* <div className="w-full absolute hidden lg:block -top-40 left-30 z-0 inBack">
           <div className="relative">
             <Img
               fluid={data.placeholderImage.childImageSharp.fluid}
@@ -30,8 +30,8 @@ const Form = () => {
             />
             <div className="bg-primary  lg:w-32 lg:h-32 xl:w-48 xl:h-48 rounded-full absolute top-8 left-12 xl:left-20 z-0"></div>
           </div>
-        </div>
-        <div className=" z-10">
+        </div> */}
+        <div>
           <h1 className="text-2xl md:text-4xl font-header font-bold ">
             Let us handle your <br /> project, professionally.
           </h1>
