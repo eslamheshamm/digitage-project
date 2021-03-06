@@ -1,13 +1,14 @@
 import React from "react"
-import { Link } from "react-scroll"
 const Button = ({ children }) => {
   return (
-    <Link to="form" smooth={true} duration={1000}>
-      <button className="py-4 px-8 tracking-wider text-black	 font-title font-bold rounded-lg bg-primary uppercase focus:outline-none">
+    <button className="py-4 px-8 tracking-wider text-black	 font-title font-bold rounded-lg bg-primary uppercase focus:outline-none">
+      <a href="https://wa.me/1555354072" target="_blank">
+        {" "}
         {children}
-      </button>
-    </Link>
+      </a>
+    </button>
   )
 }
+// +20 155 535 4072
 
 export default Button
