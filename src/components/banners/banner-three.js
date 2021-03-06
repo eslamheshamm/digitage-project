@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import eslamhesham from "../../eslamhesham.jpg"
 const BannerThree = () => {
   const button = {
     background:
@@ -74,10 +75,12 @@ const BannerThree = () => {
         </figure>
       </div>
       <button
-        className="py-6 px-4 text-sm md:text-base md:py-6 md:px-10 uppercase tracking-wider md:tracking-widest shadow-xl font-semibold rounded-xl mt-12"
+        className="py-6 px-4 text-sm md:text-base md:py-6 md:px-10 uppercase tracking-wider md:tracking-widest shadow-xl font-semibold rounded-xl mt-12 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 focus:outline-none"
         style={button}
       >
-        OUR company profile
+        <a href={eslamhesham} download>
+          OUR company profile
+        </a>
       </button>
     </section>
   )
