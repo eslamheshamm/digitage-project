@@ -64,7 +64,7 @@ const Cards = () => {
 
   return (
     <div>
-      <CardFlipped
+      <Card
         heading={`Digital Marketing`}
         text={`We achieve your business goals using digital marketing solutions, we have a long experience that enables us to open other doors for your earnings. We build a strategy that fits your business goal, by completing all stages we can reach the place that you want.`}
         backgroundText={`Digital marketing`}

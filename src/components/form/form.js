@@ -93,8 +93,8 @@ const FormInputs = () => {
         type="submit"
         className={
           disable
-            ? "self-end py-5 px-20 rounded-2xl bg-primary font-semibold text-lg opacity-40 cursor-auto"
-            : "self-end py-5 px-20 rounded-2xl bg-primary font-semibold text-lg"
+            ? "self-end py-5 px-20 rounded-2xl bg-primary font-semibold text-black text-lg opacity-40 cursor-auto"
+            : "self-end py-5 px-20 rounded-2xl bg-primary font-semibold text-black text-lg"
         }
         disabled={disable}
       >
