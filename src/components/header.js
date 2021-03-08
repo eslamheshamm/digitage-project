@@ -11,9 +11,9 @@ import Logo from "../assets/logo.svg"
 // )
 const Header = () => {
   return (
-    <header className="flex flex-col sm:flex-row justify-between items-center  w-11/12 lg:w-10/12 xl:w-9/12 mx-auto py-6  md:mb-16">
+    <header className="flex flex-row justify-between items-center  w-11/12 lg:w-10/12 xl:w-9/12 mx-auto py-6  md:mb-16">
       <div>{/* empty just to trick flex and center my items */}</div>
-      <h1 className="pr-5 ">
+      <h1>
         <Link to="/" className="cursor-default">
           <Logo />
         </Link>

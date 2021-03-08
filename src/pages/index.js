@@ -17,15 +17,15 @@ const IndexPage = () => (
     <Hero />
     <Clients />
     <BannerSmall
-      header={`Provide real value`}
-      text={`We know how to deliver your message`}
+      header={`Premium & Powerful Services`}
+      text={`We provide the essential services you need for your business's success.`}
     />
     <Cards />
     {/* <CardThree />
     <CardFour /> */}
     <BannerSmall
-      header={`Let us handle your project professionally.`}
-      text={`Achieve your business goals with endless professionalism.`}
+      header={`Provide real value`}
+      text={`We know how to deliver your message`}
     />
     <BannerThree />
     <Form />
