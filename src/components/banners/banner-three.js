@@ -44,10 +44,7 @@ const BannerThree = () => {
           <img src={horse} alt="horse" className="imageBlack" />
         </figure>
       </div>
-      <button
-        className=" py-6 px-4 text-sm md:text-base md:py-6 md:px-10 uppercase tracking-wider  md:tracking-widest shadow-xl font-semibold rounded-xl mt-12 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 focus:outline-none"
-        style={button}
-      >
+      <button className=" bg-primary py-6 px-4 text-sm md:text-base md:py-6 md:px-10 uppercase tracking-wider  md:tracking-widest shadow-xl font-semibold rounded-xl mt-12 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 focus:outline-none">
         <a href={companyProfile} download>
           OUR company profile
         </a>

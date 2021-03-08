@@ -34,9 +34,7 @@ import "./Carousel/Carousel.css"
 const Clients = () => {
   return (
     <section className="flex justify-center items-center flex-col mt-36 mb-20 text-white">
-      <h2 className="uppercase font-title font-bold text-xs mb-10">
-        Some clients
-      </h2>
+      <h2 className="uppercase font-title font-bold text-xs mb-10">clients</h2>
       <div
         className="flex justify-around items-center h-full w-12/12"
         data-sal="zoom-in"

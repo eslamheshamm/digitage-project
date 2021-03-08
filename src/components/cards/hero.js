@@ -39,9 +39,11 @@ const Hero = ({ handleClick }) => {
           The dream is not that you see while you are asleep..
         </h1>
         <p className="font-title leading-normal font-light mb-8 opacity-70 ">
-          We craft premium digital work for web, mobile and experiential with
-          creative agencies and global brands alike – putting passion, pride and
-          plenty of elbow grease into everything we do.
+          We established Digitage studio due to leaving a trendy legacy for all
+          business owners. That’s not coming from anything, we got it from our
+          experiences while dealing with a huge number of businesses owners,
+          every one of them has this dream, Digitage studio is here for this
+          exciting mission.
         </p>
         <Button handleClick={handleClick}>Let's Connect</Button>
       </article>

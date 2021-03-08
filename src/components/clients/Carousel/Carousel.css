@@ -69,8 +69,8 @@
   width: 24px;
   height: 24px;
   border-radius: 24px;
-  background-color: white;
-  border: 1px solid #ddd;
+  /* background-color: white; */
+  /* border: 1px solid #ddd; */
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -105,7 +105,7 @@
   height: 0;
   border-top: 7.5px solid transparent;
   border-bottom: 7.5px solid transparent;
-  border-right: 10px solid #484848;
+  border-right: 10px solid #ffd349;
   border-left: 5px solid transparent;
   transform: translateX(-25%);
 }
@@ -116,7 +116,7 @@
   height: 0;
   border-top: 7.5px solid transparent;
   border-bottom: 7.5px solid transparent;
-  border-left: 10px solid #484848;
+  border-left: 10px solid #ffd349;
   border-right: 5px solid transparent;
   transform: translateX(25%);
 }

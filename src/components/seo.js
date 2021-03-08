@@ -80,7 +80,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `og:image`,
-          content: `https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png`,
+          content: `https://res.cloudinary.com/eslamhesham/image/upload/v1615234506/Screenshot_55_t16rpj.png`,
         },
       ].concat(meta)}
     />
