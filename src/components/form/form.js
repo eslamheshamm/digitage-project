@@ -98,7 +98,7 @@ const FormInputs = () => {
         }
         disabled={disable}
       >
-        Sent
+        Send
       </button>
     </form>
   )

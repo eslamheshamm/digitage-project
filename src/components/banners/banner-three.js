@@ -3,7 +3,10 @@ import eslamhesham from "../../eslamhesham.jpg"
 import child from "../../images/child.png"
 import car from "../../images/car.png"
 import horse from "../../images/horse.png"
+
 const BannerThree = () => {
+  const companyProfile =
+    "https://drive.google.com/u/0/uc?id=1K0KZJ8taqEbifGABAUZX4gqMwMM18mZP&export=download"
   const button = {
     background:
       "linear-gradient(90deg, rgba(0, 0, 0, 0.4) 3.11%, rgba(248, 228, 255, 0) 114.83%)",
@@ -42,10 +45,10 @@ const BannerThree = () => {
         </figure>
       </div>
       <button
-        className="py-6 px-4 text-sm md:text-base md:py-6 md:px-10 uppercase tracking-wider md:tracking-widest shadow-xl font-semibold rounded-xl mt-12 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 focus:outline-none"
+        className=" py-6 px-4 text-sm md:text-base md:py-6 md:px-10 uppercase tracking-wider  md:tracking-widest shadow-xl font-semibold rounded-xl mt-12 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110 focus:outline-none"
         style={button}
       >
-        <a href={eslamhesham} download>
+        <a href={companyProfile} download>
           OUR company profile
         </a>
       </button>

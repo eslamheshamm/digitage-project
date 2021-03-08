@@ -1,14 +1,14 @@
 import React from "react"
 import Carousel from "./Carousel/Carousel"
-import logo1 from "./logos/1.png"
-import logo2 from "./logos/2.png"
-import logo3 from "./logos/3.png"
-import logo4 from "./logos/4.png"
-import logo5 from "./logos/5.png"
-import logo6 from "./logos/6.png"
-import logo7 from "./logos/7.png"
-import logo8 from "./logos/8.png"
-import logo9 from "./logos/9.png"
+import logo1 from "./logos/01.png"
+import logo2 from "./logos/02.png"
+import logo3 from "./logos/03.png"
+import logo4 from "./logos/04.png"
+import logo5 from "./logos/05.png"
+import logo6 from "./logos/06.png"
+import logo7 from "./logos/07.png"
+import logo8 from "./logos/08.png"
+import logo9 from "./logos/09.png"
 import logo10 from "./logos/10.png"
 import logo11 from "./logos/11.png"
 import logo12 from "./logos/12.png"
@@ -27,6 +27,9 @@ import logo24 from "./logos/24.png"
 import logo25 from "./logos/25.png"
 import logo26 from "./logos/26.png"
 import logo27 from "./logos/27.png"
+import logo28 from "./logos/28.png"
+import logo29 from "./logos/29.png"
+import logo30 from "./logos/30.png"
 import "./Carousel/Carousel.css"
 const Clients = () => {
   return (
@@ -35,7 +38,7 @@ const Clients = () => {
         Some clients
       </h2>
       <div
-        className="flex justify-around items-center h-full w-11/12"
+        className="flex justify-around items-center h-full w-12/12"
         data-sal="zoom-in"
         data-sal-duration="1000" // changes duration of the animation (from 200 to 2000 ms)
         data-sal-delay="100" // adds delay to the animation (from 5 to 1000 ms)
@@ -123,6 +126,15 @@ const Clients = () => {
           </h2>
           <h2 data-testid="carousel-item-3">
             <img src={logo27} alt="logo" className="w-32 imageBlack" />
+          </h2>
+          <h2 data-testid="carousel-item-1">
+            <img src={logo28} alt="logo" className="w-32 imageBlack" />
+          </h2>
+          <h2 data-testid="carousel-item-2">
+            <img src={logo29} alt="logo" className="w-32 imageBlack" />
+          </h2>
+          <h2 data-testid="carousel-item-3">
+            <img src={logo30} alt="logo" className="w-32 imageBlack" />
           </h2>
         </Carousel>
       </div>

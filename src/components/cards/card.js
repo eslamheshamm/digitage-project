@@ -52,7 +52,7 @@ export const CardFlipped = ({ heading, smallHeading, text, img, style }) => {
         data-sal-easing="ease" // sets easing for the animation (see easings.net for reference)
       >
         <figure className="w-full">
-          <Img fluid={img} className="w-full" />
+          <Img fluid={img} className=" w-full" />
         </figure>
       </div>
       <article

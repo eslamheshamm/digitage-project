@@ -13,7 +13,7 @@
 .carousel-content-wrapper {
   overflow: hidden;
   /* width: 100%; */
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   height: 100%;
 }
@@ -21,7 +21,9 @@
 .carousel-content {
   display: flex;
   align-items: center;
-  transition: all 250ms linear;
+  justify-content: center;
+  justify-items: center;
+  transition: all 400ms ease-in-out;
   -ms-overflow-style: none;
   /* hide scrollbar in IE and Edge */
   scrollbar-width: none;
@@ -39,6 +41,7 @@
   width: 100%;
   flex-shrink: 0;
   flex-grow: 1;
+  margin: 0 auto;
 }
 
 .carousel-content.show-2 > * {
@@ -53,14 +56,18 @@
   width: calc(100% / 4);
 }
 
+.carousel-content.show-5 > * {
+  width: calc(100% / 5);
+}
+
 .left-arrow-button,
 .right-arrow-button {
   position: absolute;
   z-index: 1;
   top: 50%;
   transform: translateY(-50%);
-  width: 48px;
-  height: 48px;
+  width: 24px;
+  height: 24px;
   border-radius: 24px;
   background-color: white;
   border: 1px solid #ddd;
