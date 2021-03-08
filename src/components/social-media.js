@@ -1,5 +1,5 @@
 import React from "react"
-// import Behance from "../assets/behance.svg"
+import Whatsapp from "../assets/whatsapp.svg"
 import Dribble from "../assets/dribble.svg"
 import Facebook from "../assets/facebook.svg"
 import Instagram from "../assets/instagram.svg"
@@ -16,20 +16,20 @@ const SocialIcons = () => {
   )
   return (
     <ul className="flex items-center">
-      {/* <Item link="https://www.instagram.com/digitagestudio/">
-        <Dribble />
-      </Item> */}
       <Item link="https://www.linkedin.com/company/digitagestudio/">
         <Linkedin className="w-5 h-auto text-white" />
       </Item>
-      <Item link="https://twitter.com/digitagestudio">
-        <Twitter />
+      <Item link="https://wa.me/201555354072">
+        <Whatsapp />
+      </Item>
+      <Item link="https://www.facebook.com/DigitageStudio/">
+        <Facebook />
       </Item>
       <Item link="https://www.instagram.com/digitagestudio/">
         <Instagram />
       </Item>
-      <Item link="https://www.facebook.com/DigitageStudio/">
-        <Facebook />
+      <Item link="https://twitter.com/digitagestudio">
+        <Twitter />
       </Item>
     </ul>
   )
