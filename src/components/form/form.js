@@ -54,7 +54,7 @@ const FormInputs = () => {
           type="email"
           placeholder="Your email address"
           ref={register({ required: true })}
-          className="p-8 border rounded-2xl focus:ring-1 focus:ring-primary focus:outline-none block w-full"
+          className="p-8 border rounded-2xl focus:ring-1 text-black focus:text-black focus:ring-primary focus:outline-none block w-full"
         />
         {errors.email && <span>This field is required</span>}
       </label>
@@ -63,7 +63,7 @@ const FormInputs = () => {
           name="name"
           type="text"
           placeholder="Your name / company’s name"
-          className="p-8 border rounded-2xl focus:ring-1 focus:ring-primary focus:outline-none block w-full"
+          className="p-8 border rounded-2xl focus:ring-1 text-black focus:text-black focus:ring-primary focus:outline-none block w-full"
           ref={register({ required: true })}
         />
         {errors.name && <span>This field is required</span>}
@@ -73,7 +73,7 @@ const FormInputs = () => {
           placeholder="Your message"
           name="message"
           ref={register({ required: true, minLength: 15, maxLength: 150 })}
-          className="resize-none border rounded-2xl h-72 p-8  focus:ring-1 focus:ring-primary focus:outline-none w-full block"
+          className="resize-none border rounded-2xl h-72 p-8 text-black focus:text-black  focus:ring-1 focus:ring-primary focus:outline-none w-full block"
         />
         {errors.message?.type === "required" && (
           <span>This field is required</span>
